@@ -1,0 +1,27 @@
+<p>product-list works!</p>
+
+<div class="row">
+    <div class="col-4">
+        <input type="text" 
+         class="form-control" name="" id="" aria-describedby="helpId" placeholder=""  [(ngModel)]="searchInput">
+    </div> 
+    <div>
+        <button name="" id="" class="btn btn-primary"  (click) = "search()" >Buscar producto</button>
+    </div>
+    <div *ngIf = "mode === '/product'" class="ml-2">
+        <a  class="btn btn-success"  href="#" [routerLink] = "['/monitoreo']" role="button" (click) = "addNewMonitoreo()">Añadir seleccionados a monitoreados</a>
+    </div>
+</div>
+
+<div class=" mt-2">
+    <ul *ngFor="let f of findings">
+        <app-product [product] = "f" (checkState) = "productChange($event)"></app-product>
+    </ul>
+
+    <div class="alert alert-danger" role="alert"   *ngIf = "findings.length === 0">
+        <strong>Ningún producto concuerda con la búsqueda</strong>
+    </div>
+
+</div>
+
+
