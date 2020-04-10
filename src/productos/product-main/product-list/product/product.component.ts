@@ -1,6 +1,6 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import { Product } from 'src/productos/Product';
-import { ProductsService } from 'src/productos/products.service';
+import { Product } from '../../../../productos/Product';
+import { ProductsService } from '../../../../productos/products.service';
 import { Router } from '@angular/router';
 
 @Component({
@@ -21,7 +21,6 @@ export class ProductComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    // this.boxState = this.productService.getMonitoreados().find((item) => item === this.product.uid) !== undefined;
     this.mode = this.router.url;
   }
 

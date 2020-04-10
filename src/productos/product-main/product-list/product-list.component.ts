@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Product } from 'src/productos/Product';
+import { Product } from '../../../productos/Product';
 import { Subscription } from 'rxjs';
-import { ProductsService } from 'src/productos/products.service';
+import { ProductsService } from '../../../productos/products.service';
 import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({

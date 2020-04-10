@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
-import { Product, Especificacion } from 'src/productos/Product';
-import { ProductsService } from 'src/productos/products.service';
+import { Product, Especificacion } from '../../../productos/Product';
+import { ProductsService } from '../../../productos/products.service';
 import { NgForm } from '@angular/forms';
 
 @Component({
